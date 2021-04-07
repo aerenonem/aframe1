@@ -9,11 +9,20 @@
   <body>
     <a-scene>
       <a-assets>
-      <a-asset-item id="object" src="models/guneshocaobject.obj"></a-asset-item>
-      <a-asset-item id="material" src="models/guneshocaobject.mtl"></a-asset-item>
+
+        <a-asset-item 
+          id="glbtestmodel"
+          src="models/C_Reinvigorate_Platform.glb">
+        </a-asset-item>
+
       </a-assets>
 
-      <a-obj-model src="#object" mtl="#material"></a-obj-model>
+      <a-entity 
+          id="glbtest"
+          gltf-model="#glbtestmodel"
+          position="0 1 -2">
+      </a-entity>
+
     </a-scene>
   </body>
 </html>
